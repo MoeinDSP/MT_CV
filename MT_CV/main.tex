@@ -1,0 +1,225 @@
+%-------------------------------------
+% Resum in LaTeX (XeLaTeX)
+% Author:  HF Yuan
+% Project: https://github.com/xyz-yuanhf/yuan-resume
+% Base on: https://github.com/mattyHerzig/mattys_resume
+%          http://www.jianxu.net/en/
+% License: MIT
+%------------------------------------
+
+\documentclass[a4paper, 10pt]{article}
+\usepackage{myresume}  % Style package
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+% --------------------  START  --------------------
+\begin{document}
+
+% -------------------- HEADING --------------------
+\begin{flushright}
+  \setstretch{0.6}
+  \item {\Calluna (+39) 351-955-5147}  % Phone number
+  \item {\Calluna \href{mailto:moein.taherinezhad@mail.polimi.it}{\textcolor{gray}{moein.taherinezhad@mail.polimi.it}}  % E-mail address
+  \item {\Calluna \href{https://github.com/MoeinDSP}{\textcolor{gray}{GitHub} }  % Home page
+\end{flushright}\vspace{-35pt}
+
+\begin{flushleft}  % Replace here with your name (and identity if required)
+  {\Calluna \fontsize{20pt}{20pt}\selectfont \textsc{Moein Taherinezhad}} \quad {\Calluna \fontsize{14.5pt}{14.5pt}\selectfont \textsc{M.Sc.}}
+  \noindent\rule{\textwidth}{0.4pt}
+\end{flushleft}
+
+% -------------------- EDUCATION --------------------
+\sectionBlock{
+\section{Education}
+}{
+\eduHeading
+  {Politecnico di Milano}{Milan, Italy}
+  {M.Sc. in Telecommunication Engineering}{Sep. 2023 - Jan. 2026 \footnotesize{\textit{(expected)}}}
+\itemListStart
+  \myItem{GPA: 27.00/30.00}
+  
+\itemListEnd
+
+\eduHeading
+  {Semnan University}{Semnan, Iran}
+  {B.E. in Electrical Engineering (Major in Telecommunication)}{Sep. 2018 - Jan. 2023}
+\itemListStart
+  \myItem{GPA: 18.09/20.00}
+  \myItem{Designing a wearable planar antenna in the terahertz frequency band and optimizing its parameters to reduce SAR level (19.50/20.0)}{Supervisor: {\href{https://scholar.google.com/citations?user=kj6yG2YAAAAJ&hl=en}{\textcolor{gray}{Professor Pejman Rezaei}}}}
+\itemListEnd
+
+}
+
+% -------------------- Research Interests -------------
+\sectionBlock{
+\section{Research Interests}
+}{
+\researchList
+\justifying
+\item \emph{Software Defined Networks}
+\item \emph{Radio Access Network}: Open-RAN, RAN Intelligent Controller, 5G/
+6G
+\item \emph{Internet of Things (IoT)}
+\item \emph{Network Measurement}
+\item \emph{Cloud Computing}
+\item \emph{Artificial Intelligence}: Machine Learning, Deep Learning
+\researchListend
+}
+
+
+% ------------------- Technical Expertise --------------
+\sectionBlock{
+\section{Technical Expertise}
+}{
+\techList
+\justifying
+\item \emph{Programming Languages}: Python, C++, P4, MATLAB, Bash script
+\item \emph{Development Infrastructure}: Docker, Kubernetes
+\item \emph{AI Libraries}: Pytorch, Tensorflow, Scikit-learn
+}
+
+
+
+% -------------------- PUBLICATIONS --------------------
+\sectionBlock{
+\section{Publications}
+}{
+\pubListStart
+\justifying
+\item \textbfHR HR Heidari, P Rezaei, S Kiani, M Taherinezhad. \href{https://scholar.google.com/citations?user=sh-KHmUAAAAJ&hl=en}{\textcolor{gray}{A monopulse array antenna based on SIW with circular polarization for using in tracking systems.} \textit{AEU-International Journal of Electronics and Communications 162, 154563}}, \hfill 2023
+
+\pubListEnd
+}
+
+% -------------------- PROJECTS --------------------
+\sectionBlock{
+\section{Projects}
+}{
+\pubListStart
+{\textbf{Implementation of an O-RAN xApp and test it on real hardware}\hfill{Aug. 2024 - Present}}\newline
+{\textcolor{gray}{\href{https://github.com/MoeinDSP/gNB-e2sm-emu}{Software defined gNB, }
+\href{https://github.com/MoeinDSP/xapp-e2ap-py/tree/mrn-base}{RAN data collection/control through xApps, }
+\href{https://github.com/MoeinDSP/oai-oran-protolib}{Protocol design, }
+O-RAN, concepts and architecture, 
+5G software development, 
+Software Defined Radio, 
+Manage over-the-air radio experiments and hardware equipment}}
+
+
+{\textbf {\href{https://github.com/MoeinDSP/Optical-Failure-Localization} {Optical-Failure-Localization}}\hfill{May. 2024}}\newline
+
+{\textbf {\href{https://github.com/MoeinDSP/Traffic-Prediction} {Traffic Prediction}}\hfill{May. 2024}}\newline
+
+{\textbf {\href{https://github.com/MoeinDSP/Qualityof-Transmission-QoT-estimationin-opticalnetworks} {Quality of Transmission Estimation}}\hfill{Apr. 2024}}\newline
+
+
+{\textbf{\href{https://github.com/MoeinDSP/Application-Flow-Identification}{Application Flow Identification}} \hfill{Apr. 2024}}\newline
+
+{\textbf{\href{https://github.com/MoeinDSP/MAC-address-derandomization}{MAC address derandomization }} \hfill{ Mar. 2024}}\newline
+
+{\textbf{\href{https://github.com/MoeinDSP/Round-Trip-Time-Analysis-}{Round-Trip-Time-Analysis}} \hfill{Mar. 2024}}\newline
+
+{\textbf{\href{https://github.com/MoeinDSP/Websitefingerprinting}{Website fingerprinting}} \hfill{Feb. 2024}}\newline
+
+
+
+
+\pubListEnd
+}
+
+% -------------------- Work Experiences --------------------
+\sectionBlock{
+\section{Work Experiences}
+}{
+
+{\textbf{
+  {Laboratory assistant in Antenna Design laboratory under Supervision of \href{https://scholar.google.com/citations?user=kj6yG2YAAAAJ&hl=en}
+  {\textcolor{gray}{Dr. Pejman Rezaei}}}}\hfill{Sep. 2022 - Jan. 2023}\newline
+}
+
+{\textbf{
+  {Laboratory assistant in digital communication laboratory under Supervision of \href{https://scholar.google.com/citations?user=GHJY61wAAAAJ&hl=en}
+  {\textcolor{gray}{Dr. Ali Shahzadi}}}}\hfill{Sep. 2022 - Jan. 2023}\newline
+}
+
+{\textbf{
+  {Research Assistant: \href{https://en.itrc.ac.ir/}{ICT Research Center, Ministry of ICT}}}\hfill{Sep. 2022 - Jan. 2023}\newline
+Applying Machine Learning Algorithms in Wireless Communication Channel under the supervision of \href{https://scholar.google.ca/citations?user=fwtTUX0AAAAJ&hl=en}{\textcolor{gray}{Houman Zarrabi}}}
+\newline
+
+{\textbf{Teaching Assitant (Head TA)}
+    
+}{
+    • Principle of Communication Systems, {\href{https://scholar.google.com/citations?user=GHJY61wAAAAJ&hl=en}{\textcolor{gray}{Dr. Ali Shahzadi}}}\hfill{Sep. 2021 - Jan. 2022}\neweline
+
+    
+    • Principle of Communication Systems, {\href{https://scholar.google.com/citations?user=GHJY61wAAAAJ&hl=en}{\textcolor{gray}{Dr. Ali Shahzadi}}}\hfill{Feb. 2021 - Jun. 2021}
+
+     • Computer Programming, {\href{https://scholar.google.com/citations?user=zfvwqc0AAAAJ}{\textcolor{gray}{Dr. Razieh Rastgoo}}}\hfill{Feb. 2021 - Jun. 2021}
+
+     • Signals and Systems, {\href{https://scholar.google.com/citations?user=kj6yG2YAAAAJ&hl=en}{\textcolor{gray}{Dr. Pejman Rezaei}}}\hfill{Feb. 2021 - Jun. 2021}
+
+     • Engineering Mathematics, {\href{https://scholar.google.com/citations?user=kj6yG2YAAAAJ&hl=en}{\textcolor{gray}{Dr. Pejman Rezaei}}}\hfill{Sep. 2020 - Dec. 2020}
+
+     • Engineering Mathematics, {\href{https://scholar.google.com/citations?user=kj6yG2YAAAAJ&hl=en}{\textcolor{gray}{Dr. Pejman Rezaei}}}\hfill{Feb. 2020 - Jun. 2020}\newline
+
+}
+
+{\textbf{Member of Electrical Engineering Scientific Student Community of Semnan University}
+
+• Rank 1st among more than 50 Universities in a national competition
+}\hfill{Jan. 2021}
+}
+\newline
+% -------------------- AWARDS & HONORS --------------------
+\sectionBlock{
+\section{Awards\\and\\Honors}
+}{
+\awardListStart
+\justifying
+\item \emph{Awarded a merit-based scholarship}\newline Admitted to Universidad Politécnica de Madrid Erasmus Exchange student \hfill Apr. 2024 
+
+\item \emph{Ranked 2\textsuperscript{nd} among 106 students, Talent student in faculty of Electrical and\newline Computer Engineering, Semnan University}\hfill Feb. 2023\newline Issued by Vice-Chancellor of Academic and Graduate Studies of Semnan University.
+
+\awardListEnd
+}
+
+%---------------------- Selected Courses ------------------------
+\sectionBlock{
+\section{Selected Courses}
+}{
+\courseListStarts
+Internet of Things \hfill 30.0/30.0 \newline
+Network Measurement Lab\hfill 28.0/30.0 \newline
+Communication Network Design\hfill 27.0/30.0\newline
+Game Theory\hfill 29.0/30.0\newline
+Classical and Quantum error correction\hfill 30.0/30.0\newline
+Wireless Internet\hfill 25.0/30.0\newline
+Digital Communications\hfill 20.0/20.0\newline
+Principles of Communication Systems\hfill 20.0/20.0\newline
+Computer Networks\hfill 19.50/20.0\newline
+Linear Algebra\hfill 19.70/20.0\newline
+Microwave and Antenna\hfill 20.0/20.0\newline
+Optical Communications\hfill 20.0/20.0\newline
+Wireless Communication\hfill 20.0/20.0\newline
+Field and Waves\hfill 18.0/20.0\newline
+Communication Circuits\hfill 18.0/20.0\newline
+Artificial Intelligence\hfill 18.50/20.0\newline
+}
+
+\courseListEnd
+
+
+
+% -------------------- SKILLS --------------------
+\sectionBlock{
+\section{Language}
+}{
+\skillListStart
+\justifying
+\item  • English: TOEFL iBT (Test Score: 93)
+\item  • Persian: Native
+\skillListEnd
+}
+
+\end{document}
+
